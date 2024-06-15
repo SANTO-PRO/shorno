@@ -4,46 +4,46 @@ import Button from '../ui/Button';
 const Hero = () => {
 	return (
 		<section className="py-5 md:py-10 h-fit relative">
-			{/* <Overlay className="bg-[#101628]/75" /> */}
-
-			<div className="wrapper grid grid-cols-1 gap-5 md:grid-cols-2 2xl:gap-0">
+			<div className="wrapper grid grid-cols-12 gap-5 md:grid-cols-12 2xl:gap-5">
 				{/* Text content */}
-				<div className="flex flex-col justify-center gap-4 z-30 max-sm:flex-center max-sm:text-center">
-					<h1 className="h2-bold text-black">এক টাকায় গোল্ড কিনেন</h1>
-					<h1 className="h2-bold text-black">Join Our Waitlist</h1>
+				<div className="col-span-5  place-content-center">
+					<h2 className="h2-bold text-black">To Buy Gold For 1৳ TAKA</h2>
+					<h1 className="h1-bold text-black">Join the Waitlist</h1>
 
 					<form className="flex flex-col gap-4 mt-6">
 						<input
-							type="number"
-							placeholder="Please provide your phone number"
-							className="input-field"
-							required
-						/>
-
-						<input
 							type="phone"
-							placeholder="Please provide your email address"
+							placeholder="Enter your email address"
 							className="input-field"
 						/>
 
-						<Button
-							variant="primary"
-							type="submit"
-							className="w-fit gold-bg rounded-full !text-black  shadow-inner flex gap-1.5 self-end"
-						>
-							Join Waitlist
-						</Button>
+						<div className="w-full flex gap-2 ">
+							<input
+								type="number"
+								placeholder="Enter your phone number"
+								className="input-field w-2/3"
+								required
+							/>
+
+							<Button
+								variant="primary"
+								type="submit"
+								className="w-1/3 h-12 rounded-full text-white font-semibold flex gap-1.5 self-end flex-center bg-[#0D0D0D] hover:gold-bg hover:text-black"
+							>
+								Join Waitlist
+							</Button>
+						</div>
 					</form>
 				</div>
 
 				{/* Hero Intro image */}
-				<div className="w-full flex-start transform scale-x-100 z-30">
+				<div className="col-span-7 flex justify-end ">
 					<Image
-						src="/assets/images/hero-intro.svg"
+						src="/assets/images/gold-bar.svg"
 						alt="hero intro phone"
 						width={50}
 						height={50}
-						className="w-[590px] h-[560px] max-sm:h-[300px]"
+						className="w-[660px] h-[660px] max-sm:h-[300px]"
 					/>
 				</div>
 			</div>

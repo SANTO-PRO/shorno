@@ -8,8 +8,8 @@ const nunito_sans = Nunito_Sans({
 });
 
 export const metadata = {
-	title: 'Fix Phone',
-	description: 'Fix Your Phone Within 15-40 Minutes While You’re Shopping',
+	title: 'Shorno',
+	description: '1 Takay Gold kinen',
 };
 
 export default function RootLayout({ children }) {
