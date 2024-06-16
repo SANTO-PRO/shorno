@@ -36,37 +36,16 @@ module.exports = {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
-				foreground: 'hsl(var(--foreground))',
-				secondary: {
-					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))',
-				},
-				destructive: {
-					DEFAULT: 'hsl(var(--destructive))',
-					foreground: 'hsl(var(--destructive-foreground))',
-				},
-				muted: {
-					DEFAULT: 'hsl(var(--muted))',
-					foreground: 'hsl(var(--muted-foreground))',
-				},
-				accent: {
-					DEFAULT: 'hsl(var(--accent))',
-					foreground: 'hsl(var(--accent-foreground))',
-				},
-				popover: {
-					DEFAULT: 'hsl(var(--popover))',
-					foreground: 'hsl(var(--popover-foreground))',
-				},
-				card: {
-					DEFAULT: 'hsl(var(--card))',
-					foreground: 'hsl(var(--card-foreground))',
-				},
 			},
 			fontFamily: {
 				Nunito_Sans: ['var(--font-nunito_sans)'],
 			},
 			backgroundImage: {
 				'hero-img': "url('/assets/images/hero-bg.svg')",
+				'dark-gradient':
+					'linear-gradient(180deg, rgba(4,7,13,1) 0%, rgba(6,11,16,1) 50%, rgba(14,18,23,1) 100%)',
+				'gold-gradient':
+					'linear-gradient(180deg, rgba(241,185,76,1) 0%, rgba(202,142,54,1) 100%)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

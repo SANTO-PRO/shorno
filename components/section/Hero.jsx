@@ -3,14 +3,22 @@ import Button from '../ui/Button';
 
 const Hero = () => {
 	return (
-		<section className="py-5 md:py-10 h-fit relative">
-			<div className="wrapper grid grid-cols-12 gap-5 md:grid-cols-12 2xl:gap-5">
+		<section className="py-5 md:py-10 h-fit bg-dark-gradient relative">
+			<div className="wrapper grid grid-rows-2 gap-1 md:grid-rows-2 2xl:gap-1">
 				{/* Text content */}
-				<div className="col-span-5  place-content-center">
-					<h2 className="h2-bold text-black">To Buy Gold For 1৳ TAKA</h2>
-					<h1 className="h1-bold text-black">Join the Waitlist</h1>
+				<div className="w-full row-span-1 flex-center flex-col gap-4">
+					<p className="p-medium-14 text-[#FAF3BA] ">Buy Gold Form Shorno</p>
+					<div className="flex-center flex-col">
+						<h1 className="text-7xl text-[#FAF3BA]">Join the waitlist</h1>
+						<h1 className="text-7xl text-[#FAF3BA]">to Buy Gold for 1৳!</h1>
+					</div>
+					<p className="w-1/2 p-medium-14 text-center text-[#aaa472] mt-4">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum,
+						quo! Qui tenetur at fugit consequatur sint excepturi quam omnis
+						reprehenderit.
+					</p>
 
-					<form className="flex flex-col gap-4 mt-6">
+					{/* <form className="flex flex-col gap-4">
 						<input
 							type="phone"
 							placeholder="Enter your email address"
@@ -33,17 +41,29 @@ const Hero = () => {
 								Join Waitlist
 							</Button>
 						</div>
-					</form>
+					</form> */}
+					<div className="relative">
+						<Button className="absolute top-24 -left-16 w-32 flex-center ">
+							Join Waitlist
+						</Button>
+					</div>
 				</div>
 
 				{/* Hero Intro image */}
-				<div className="col-span-7 flex justify-end ">
+				<div className="row-span-1 flex justify-end">
 					<Image
-						src="/assets/images/gold-bar.svg"
+						src="/assets/images/gold-barflat.svg"
 						alt="hero intro phone"
 						width={50}
 						height={50}
-						className="w-[660px] h-[660px] max-sm:h-[300px]"
+						className="w-[640px] h-[540px] max-sm:h-[300px] absolute -bottom-40 right-40 scale-x-[-1]"
+					/>
+					<Image
+						src="/assets/images/gold-barflat.svg"
+						alt="hero intro phone"
+						width={50}
+						height={50}
+						className="w-[640px] h-[540px] max-sm:h-[300px] absolute -bottom-40 left-40"
 					/>
 				</div>
 			</div>

@@ -1,10 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import Button from '../ui/Button';
 
 const Header = () => {
 	return (
-		<header className="w-full  bg-[#0d0d0d]">
+		<header className="w-full  bg-[#04070D]">
 			<div className="flex items-center justify-between wrapper">
 				{/* logo */}
 				<Link href="/" className="w-42">
@@ -17,13 +16,16 @@ const Header = () => {
 					/>
 				</Link>
 
-				<div className="flex-center gap-4">
-					<Button className="gold-bg rounded-full py-1 !text-black !font-bold">
+				<div className="flex-center gap-10">
+					<Link href="#" className="rounded-full py-1 text-[#FFF0BC] ">
+						Home
+					</Link>
+					<Link href="#" className="rounded-full py-1 text-[#FFF0BC] ">
 						Investment Guide
-					</Button>
-					<Button className="gold-bg rounded-full py-1 !text-black !font-bold">
-						SignUp
-					</Button>
+					</Link>
+					<Link href="#" className="rounded-full py-1 text-[#FFF0BC] ">
+						Login
+					</Link>
 				</div>
 			</div>
 		</header>
