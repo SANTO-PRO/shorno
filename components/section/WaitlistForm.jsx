@@ -1,34 +1,97 @@
+'use client';
+
+import axios from 'axios';
+import { useState } from 'react';
+import { Bounce, toast } from 'react-toastify';
 import Button from '../ui/Button';
 
 const WaitlistForm = () => {
+	//states
+	const [phone, setPhone] = useState();
+	const [email, setEmail] = useState();
+	const [name, setName] = useState();
+
+	//handler
+	const handleSubmit = async (e) => {
+		e.preventDefault();
+
+		const data = {
+			Name: name,
+			Phone: phone,
+			Email: email,
+		};
+
+		try {
+			const response = await axios.post(
+				'https://sheetdb.io/api/v1/8uy6886mh7qho',
+				data,
+			);
+
+			if (response.status === 201) {
+				toast(`Congratulations, you've been added to the waitlist!`, {
+					position: 'bottom-right',
+					autoClose: 5000,
+					hideProgressBar: false,
+					closeOnClick: true,
+					pauseOnHover: true,
+					draggable: true,
+					progress: undefined,
+					theme: 'light',
+					transition: Bounce,
+				});
+
+				setName('');
+				setPhone('');
+				setEmail('');
+			}
+		} catch (error) {
+			toast.error(`Submitting Error: ${error.message}`, {
+				position: 'top-left',
+			});
+		}
+	};
+
 	return (
 		<section className="bg-gold-gradient h-fit" id="join">
 			<div className="wrapper h-[350px] flex flex-col gap-6 justify-center">
-				<p className="p-medium-16">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolor
-					sequi fuga repellat ducimus deleniti possimus nisi non tempora
-				</p>
-
-				<form className="flex gap-4 max-md:flex-col">
+				<form className="flex gap-4 max-md:flex-col" onSubmit={handleSubmit}>
 					<input
-						type="number"
-						placeholder="Enter your phone number"
-						className="input-field w-1/2"
+						name="Name"
+						type="text"
+						placeholder="Enter your full name"
+						className="input-field w-1/3"
+						value={name}
+						onChange={(e) => setName(e.target.value)}
 						required
 					/>
 
 					<input
-						type="phone"
+						name="Phone"
+						type="text"
+						placeholder="Enter your phone number"
+						className="input-field w-1/3"
+						required
+						value={phone}
+						onChange={(e) => setPhone(e.target.value)}
+					/>
+
+					<input
+						name="Email"
+						type="email"
 						placeholder="Enter your email address"
-						className="input-field w-1/2"
+						className="input-field w-1/3"
+						value={email}
+						onChange={(e) => setEmail(e.target.value)}
 					/>
 
 					<Button
 						variant="primary"
 						type="submit"
-						className="w-1/4 h-15 rounded-2xl font-medium flex gap-1.5 flex-center bg-dark-gradient drop-shadow-sm"
+						className="w-1/4 h-15  font-medium  gap-1.5 flex-center bg-dark-gradient drop-shadow-sm 
+						cursor-pointer 
+						"
 					>
-						Register for the waitlist
+						Join
 					</Button>
 				</form>
 			</div>

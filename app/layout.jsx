@@ -1,15 +1,15 @@
-import { Alike, Nunito_Sans } from 'next/font/google';
+import { Hind_Siliguri, Poppins } from 'next/font/google';
 import './globals.css';
 
-const nunito_sans = Nunito_Sans({
+const poppins = Poppins({
 	subsets: ['latin'],
-	weight: ['400', '500', '600', '700', '800', '900'],
-	variable: '--font-nunito_sans',
+	weight: ['400', '500', '700', '900'],
+	variable: '--font-poppins',
 });
-const alike = Alike({
+const siliguri = Hind_Siliguri({
 	subsets: ['latin'],
-	weight: ['400'],
-	variable: '--font-alike',
+	weight: ['700'],
+	variable: '--font-siliguri',
 });
 
 export const metadata = {
@@ -20,7 +20,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body className={alike.className}>{children}</body>
+			<body className={`${poppins.variable} ${siliguri.variable}`}>
+				{children}
+			</body>
 		</html>
 	);
 }

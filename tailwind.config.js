@@ -38,7 +38,8 @@ module.exports = {
 				ring: 'hsl(var(--ring))',
 			},
 			fontFamily: {
-				Nunito_Sans: ['var(--font-nunito_sans)'],
+				Poppins: ['var(--font-poppins)'],
+				Siliguri: ['var(--font-siliguri)'],
 			},
 			backgroundImage: {
 				'hero-img': "url('/assets/images/hero-bg.svg')",
