@@ -43,9 +43,11 @@ module.exports = {
 			backgroundImage: {
 				'hero-img': "url('/assets/images/hero-bg.svg')",
 				'dark-gradient':
-					'linear-gradient(180deg, rgba(4,7,13,1) 0%, rgba(6,11,16,1) 50%, rgba(14,18,23,1) 100%)',
+					'linear-gradient(180deg, hsla(224, 58%, 4%, 1) 0%, hsla(204, 45%, 4%, 1) 50%, hsla(213, 27%, 6%, 1) 100%)',
 				'gold-gradient':
-					'linear-gradient(180deg, rgba(241,185,76,1) 0%, rgba(202,142,54,1) 100%)',
+					'linear-gradient(180deg, hsla(41, 100%, 89%, 1) 0%, hsla(40, 61%, 78%, 1) 50%, hsla(36, 46%, 62%, 1) 100%)',
+				'btn-gold-gradient':
+					'linear-gradient(180deg, hsla(44, 88%, 97%, 1) 0%, hsla(37, 42%, 58%, 1) 50%, hsla(21, 90%, 19%, 1) 100%)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
