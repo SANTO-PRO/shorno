@@ -7,7 +7,7 @@ const GoldConverter = () => {
 	const [grams, setGrams] = useState('');
 
 	// gold current rate
-	const goldPricePerGram = 8796.34;
+	const goldPricePerGram = 10027;
 
 	useEffect(() => {
 		const bdtValue = parseFloat(bdt);
@@ -28,8 +28,8 @@ const GoldConverter = () => {
 	}, [grams]);
 
 	return (
-		<div className="min-h-screen flex items-center justify-center bg-gray-100">
-			<div className="bg-white p-8 rounded shadow-md w-full max-w-md">
+		<div className="min-h-fit">
+			<div className="bg-gold-gradient p-8 rounded-xl shadow-md w-full max-w-md">
 				<h1 className="text-2xl font-bold mb-4">Gold Converter</h1>
 				<div className="mb-4">
 					<label htmlFor="bdt" className="block text-gray-700">

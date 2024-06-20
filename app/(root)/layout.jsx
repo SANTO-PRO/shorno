@@ -1,5 +1,4 @@
 import Footer from '@/components/shared/Footer';
-import GoldConverter from '@/components/shared/GoldConverter';
 import Header from '@/components/shared/Header';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -21,7 +20,7 @@ const RootLayout = ({ children }) => {
 				pauseOnHover
 				theme="light"
 			/>
-			<GoldConverter />
+
 			<Footer />
 		</div>
 	);

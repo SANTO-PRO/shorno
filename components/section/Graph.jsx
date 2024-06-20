@@ -1,4 +1,4 @@
-import Card from '../ui/Card';
+import GoldConverter from '../shared/GoldConverter';
 
 const Graph = () => {
 	return (
@@ -10,8 +10,8 @@ const Graph = () => {
 					</h2>
 				</div>
 
-				<div className="flex gap-4">
-					<Card />
+				<div className="flex gap-4 py-10">
+					<GoldConverter />
 				</div>
 			</div>
 		</section>
