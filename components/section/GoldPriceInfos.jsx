@@ -13,7 +13,7 @@ const GoldPriceInfos = () => {
 					</h2>
 				</div>
 
-				<div className="flex justify-between gap-4 py-10">
+				<div className="flex justify-between  gap-4 py-10 max-xl:flex-wrap max-xl:justify-center max-md:flex-col max-md:pb-0  max-xl:gap-8">
 					<Graph />
 					<PriceInGram />
 					<PriceInVori />

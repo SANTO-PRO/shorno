@@ -2,8 +2,8 @@ import { goldData } from '@/utils';
 
 const PriceInVori = () => {
 	return (
-		<div className="overflow-x-auto bg-gold-gradient rounded-xl">
-			<table className="min-w-full text-black ">
+		<div className="overflow-x-auto bg-gold-gradient rounded-xl border border-[#FDEAC3]">
+			<table className="w-[300px] max-md:w-full text-black ">
 				<thead>
 					<tr>
 						<th className="py-4 px-4">CARAT | স্বর্ণের ক্যারেট</th>

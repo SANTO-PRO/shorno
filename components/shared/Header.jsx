@@ -6,7 +6,7 @@ const Header = () => {
 		<header className="w-full  bg-[#04070D]">
 			<div className="flex items-center justify-between wrapper">
 				{/* logo */}
-				<Link href="/" className="w-42">
+				<Link href="/" className="w-42 max-md:w-36">
 					<Image
 						src="/assets/images/logo.svg"
 						alt="Fix Phone logo"
@@ -16,11 +16,17 @@ const Header = () => {
 					/>
 				</Link>
 
-				<div className="flex-center gap-10">
-					<Link href="#" className="rounded-full py-1 text-[#FFF0BC] ">
+				<div className="flex-center gap-10 max-md:gap-5">
+					<Link
+						href="#"
+						className="rounded-full py-1 text-[#FFF0BC] max-md:text-sm"
+					>
 						Home
 					</Link>
-					<Link href="#" className="rounded-full py-1 text-[#FFF0BC] ">
+					<Link
+						href="#"
+						className="rounded-full py-1 text-[#FFF0BC] max-md:text-sm"
+					>
 						Investment Guide
 					</Link>
 				</div>

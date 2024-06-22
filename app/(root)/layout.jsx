@@ -7,7 +7,7 @@ const RootLayout = ({ children }) => {
 	return (
 		<div className="flex h-screen flex-col">
 			<Header />
-			<main className="flex-1">{children}</main>
+			<main className="flex-1 max-md:overflow-x-hidden">{children}</main>
 			<ToastContainer
 				position="top-right"
 				autoClose={5000}

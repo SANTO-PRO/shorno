@@ -203,3 +203,24 @@ body {
 		@apply bg-gray-300 !important;
 	}
 }
+
+/* btn shine  */
+@keyframes shine {
+	0% {
+		background-position: 200%;
+	}
+	100% {
+		background-position: -200%;
+	}
+}
+
+.shine-effect {
+	background: linear-gradient(
+		120deg,
+		rgba(255, 255, 255, 0.2) 30%,
+		rgba(255, 255, 255, 0.5) 50%,
+		rgba(255, 255, 255, 0.2) 70%
+	);
+	background-size: 200% auto;
+	animation: shine 1.5s linear infinite;
+}
