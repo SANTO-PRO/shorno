@@ -28,8 +28,8 @@ const GoldConverter = () => {
 	}, [grams]);
 
 	return (
-		<div className="min-h-fit">
-			<div className="bg-gold-gradient p-8 rounded-xl shadow-md w-full max-w-md">
+		<div className="bg-gold-gradient p-8 rounded-xl shadow-md">
+			<div className="w-full max-w-md">
 				<h1 className="text-2xl font-bold mb-4">Gold Converter</h1>
 				<div className="mb-4">
 					<label htmlFor="bdt" className="block text-gray-700">

@@ -23,9 +23,6 @@ const Header = () => {
 					<Link href="#" className="rounded-full py-1 text-[#FFF0BC] ">
 						Investment Guide
 					</Link>
-					<Link href="#" className="rounded-full py-1 text-[#FFF0BC] ">
-						Login
-					</Link>
 				</div>
 			</div>
 		</header>
