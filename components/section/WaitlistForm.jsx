@@ -89,7 +89,9 @@ const WaitlistForm = () => {
 						variant="primary"
 						type="submit"
 						className={`w-1/4 h-15 font-medium gap-1.5 flex-center bg-dark-gradient drop-shadow-sm 
-						cursor-pointer max-md:w-full max-lg:h-14 ${!isHovered ? 'shine-effect ' : ''}`}
+						cursor-pointer max-md:w-full max-lg:h-14 !bg-black  ${
+							!isHovered ? 'shine-effect ' : ''
+						}`}
 						onMouseEnter={() => setIsHovered(true)}
 						onMouseLeave={() => setIsHovered(false)}
 					>
