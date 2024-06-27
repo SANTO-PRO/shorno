@@ -8,8 +8,8 @@ const GoldPriceInfos = () => {
 		<section id="gold-price-infos" className="bg-dark-gradient h-fit py-10">
 			<div className="wrapper">
 				<div>
-					<h2 className="text-3xl text-[#FAF3BA] w-fit border-b-2  pb-4">
-						Lorem ipsum dolor sit amet
+					<h2 className="text-3xl text-[#FAF3BA] w-fit border-b-2 border-[#FAF3BA]  pb-2">
+						Check Out The Latest Gold Prices
 					</h2>
 				</div>
 

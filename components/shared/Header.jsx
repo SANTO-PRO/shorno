@@ -1,3 +1,6 @@
+'use client';
+
+import { scrollToSection } from '@/utils';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -17,18 +20,12 @@ const Header = () => {
 				</Link>
 
 				<div className="flex-center gap-10 max-md:gap-5">
-					<Link
-						href="#"
-						className="rounded-full py-1 text-[#FFF0BC] max-md:text-sm"
+					<li
+						className="rounded-full py-1 text-[#FFF0BC] max-md:text-sm cursor-pointer"
+						onClick={() => scrollToSection('gold-price-infos')}
 					>
-						Home
-					</Link>
-					<Link
-						href="#"
-						className="rounded-full py-1 text-[#FFF0BC] max-md:text-sm"
-					>
-						Investment Guide
-					</Link>
+						Gold Prices
+					</li>
 				</div>
 			</div>
 		</header>
